@@ -1,0 +1,7 @@
+.navbar-container {
+    height: 100%;
+    width: 20%;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+}

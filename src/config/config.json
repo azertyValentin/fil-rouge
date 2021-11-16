@@ -1,0 +1,61 @@
+{
+    "building": {
+        "name": "IMT Atlantique"
+    },
+    "spaces": [
+        {
+            "id": 1,
+            "name": "Bâtiment A",
+            "rooms": [
+                {
+                    "id": 1,
+                    "name": "A1",
+                    "available_space": 1,
+                    "affected_people": []
+                },
+                {
+                    "id": 2,
+                    "name": "A2",
+                    "available_space": 1,
+                    "affected_people": []
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Bâtiment B",
+            "rooms": [
+                {
+                    "id": 3,
+                    "name": "B1",
+                    "available_space": 1,
+                    "affected_people": []
+                },
+                {
+                    "id": 4,
+                    "name": "B2",
+                    "available_space": 1,
+                    "affected_people": []
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Bâtiment C",
+            "rooms": [
+                {
+                    "id": 5,
+                    "name": "C1",
+                    "available_space": 1,
+                    "affected_people": []
+                },
+                {
+                    "id": 6,
+                    "name": "C2",
+                    "available_space": 1,
+                    "affected_people": []
+                }
+            ]
+        }
+    ]
+}

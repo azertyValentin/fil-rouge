@@ -1,4 +1,8 @@
 .header-container {
-    background-color: lightgray;
     padding: 1px 10px;
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
+
+.header-title {
+    color: lightskyblue;
 }

@@ -1,0 +1,16 @@
+#root, .App {
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li:hover {
+  color: lightskyblue;
+  cursor: pointer;
+}
+
+li {
+  padding: 5px;
+}
