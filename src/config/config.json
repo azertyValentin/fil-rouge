@@ -22,7 +22,7 @@
             ]
         },
         {
-            "id": 1,
+            "id": 2,
             "name": "Bâtiment B",
             "rooms": [
                 {
@@ -40,7 +40,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": 3,
             "name": "Bâtiment C",
             "rooms": [
                 {

@@ -4,4 +4,15 @@
     padding-top: 10px;
     padding-left: 10px;
     box-shadow: 1px 1px 1px 1px lightgray;
+    display: inline-block;
 }
+
+.main-container {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 20px;
+}
+
+.navbar {
+    padding-left: 30px;
+} 
