@@ -2,6 +2,7 @@ import './Navbar.css'
 import config from '../../config/config'
 import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
 import Welcome from '../Welcome/Welcome';
+import Building from '../Building/Building';
 
 function Navbar() {
     const parsedConfig = JSON.parse(JSON.stringify(config));
@@ -35,7 +36,7 @@ function Navbar() {
                         return (
                             <Route key={space.id} path={"/"+space.id}>
                                 <div className="main-container">
-                                    <h1>Salut</h1>
+                                    <Building building={space}></Building>
                                 </div>
                             </Route>
                         )
