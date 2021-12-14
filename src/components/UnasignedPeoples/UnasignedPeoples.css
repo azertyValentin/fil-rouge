@@ -1,0 +1,21 @@
+.unasigned-people-main-container {
+    position: fixed;
+    right: 0;
+    width: 40%;
+    min-height: 600px;
+    padding: 10px;
+}
+
+.unasigned-people-sub-container {
+    min-height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.room-select {
+    margin: 3px;
+}

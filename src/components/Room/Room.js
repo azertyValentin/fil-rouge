@@ -1,33 +1,21 @@
 import './Room.css'
 import { connect } from 'react-redux'
 import Person from '../Person/Person'
-import { useState, useEffect } from 'react';
 
 function Room(props) {
-    const [associatedPeople, setAssociatedPeople] = useState([]);
-
-    const getAssociatedPeoples = () => {
-        return props.peoples.filter(people => people.affected_room === props.room.id)
-    }
-
     const displayIsEmptyMessage = () => {
-        if(associatedPeople.length === 0) {
+        if(props.peoples.filter(people => people.affected_room === props.room.id).length === 0) {
             return (<p>Il n'y a actuellement aucune personne dans cette salle.</p>)
         }
     }
 
-    useEffect(() => {
-        setAssociatedPeople(getAssociatedPeoples())
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
     return (
         <div className="room-container">
-            <p><b>Room {props.room.name}</b></p>
+            <p><b>Salle {props.room.name}</b></p>
             {
-                associatedPeople.map((people) => {
+                props.peoples.filter(people => people.affected_room === props.room.id).map((people) => {
                     return (
-                        <Person key={people.id} people={people}></Person>
+                        <Person key={people.id} room={props.room} people={people}></Person>
                     )
                 })
             }

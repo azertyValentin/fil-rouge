@@ -1,10 +1,14 @@
 import './Person.css'
 import person_logo from '../../images/person_logo.png'
 import cancel_logo from '../../images/cancel_logo.png'
+import { connect } from 'react-redux'
 
 function Person(props) {
     const deleteFromRoom = () => {
-        console.log("TODO")
+        props.dispatch({
+            type: 'REMOVE_PERSON',
+            payload: props.people
+        })
     }
 
     return (
@@ -16,4 +20,14 @@ function Person(props) {
     )
 }
 
-export default Person;
+const mapStateToProps = state => {
+    return { peoples: state.peoples }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+      dispatch
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Person);

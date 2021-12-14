@@ -14,4 +14,10 @@
 
 .delete-person-button {
     width: 20px;
+    padding: 5px;
+}
+
+.delete-person-button:hover {
+    background-color: red;
+    border-radius: 5px;
 }

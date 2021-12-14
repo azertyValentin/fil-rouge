@@ -1,5 +1,6 @@
 import { createStore } from 'redux'
 import config from '../config/config'
+import People from '../models/People';
 
 function getPeoples() {
     const parsedConfig = JSON.parse(JSON.stringify(config));
@@ -17,10 +18,17 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-if (action.type === 'TODO') {
-    return Object.assign({}, state, {})
-}
-return state
+    if (action.type === 'REMOVE_PERSON') {
+        return Object.assign({}, state, {
+            peoples: state.peoples.map(people => {
+                if (people.id === action.payload.id) {
+                    return new People(people.id, people.name, 0)
+                }
+                return people;
+            })
+        })
+    }
+    return state
 }
 
 const store = createStore(reducer)
