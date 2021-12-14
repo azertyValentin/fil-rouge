@@ -1,0 +1,17 @@
+.people-logo {
+    width: 50px;
+}
+
+.person-main-container {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px;
+}
+
+.delete-person-button {
+    width: 20px;
+}

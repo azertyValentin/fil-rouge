@@ -10,14 +10,12 @@
                 {
                     "id": 1,
                     "name": "A1",
-                    "available_space": 1,
-                    "affected_people": []
+                    "available_space": 3
                 },
                 {
                     "id": 2,
                     "name": "A2",
-                    "available_space": 1,
-                    "affected_people": []
+                    "available_space": 1
                 }
             ]
         },
@@ -28,14 +26,12 @@
                 {
                     "id": 3,
                     "name": "B1",
-                    "available_space": 1,
-                    "affected_people": []
+                    "available_space": 1
                 },
                 {
                     "id": 4,
                     "name": "B2",
-                    "available_space": 1,
-                    "affected_people": []
+                    "available_space": 1
                 }
             ]
         },
@@ -46,16 +42,62 @@
                 {
                     "id": 5,
                     "name": "C1",
-                    "available_space": 1,
-                    "affected_people": []
+                    "available_space": 1
                 },
                 {
                     "id": 6,
                     "name": "C2",
-                    "available_space": 1,
-                    "affected_people": []
+                    "available_space": 1
                 }
             ]
+        },
+        {
+            "id": 4,
+            "name": "Bâtiment D",
+            "rooms": [
+                {
+                    "id": 7,
+                    "name": "D1",
+                    "available_space": 1
+                },
+                {
+                    "id": 8,
+                    "name": "D2",
+                    "available_space": 1
+                }
+            ]
+        }
+    ],
+    "persons": [
+        {
+            "id": 1,
+            "name": "Jean Dujardin",
+            "affected_room": 1
+        },
+        {
+            "id": 2,
+            "name": "Mike Delfino",
+            "affected_room": 2
+        },
+        {
+            "id": 3,
+            "name": "Barack Obama",
+            "affected_room": 1
+        },
+        {
+            "id": 4,
+            "name": "Michel Obama",
+            "affected_room": 0
+        },
+        {
+            "id": 5,
+            "name": "Steve Jobs",
+            "affected_room": 0
+        },
+        {
+            "id": 6,
+            "name": "Christopher Nolan",
+            "affected_room": 1
         }
     ]
 }
