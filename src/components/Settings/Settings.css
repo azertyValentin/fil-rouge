@@ -1,0 +1,19 @@
+.settings-button {
+    background-color: lightskyblue;
+    border-radius: 3px;
+    margin: 3px;
+    padding: 3px;
+    color: white;
+}
+
+.settings-button:hover {
+    background-color: lightblue;
+}
+
+.settings-button:disabled {
+    background-color: lightgrey;
+}
+
+.success-message {
+    color: green;
+}

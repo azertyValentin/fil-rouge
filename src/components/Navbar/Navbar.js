@@ -3,6 +3,7 @@ import config from '../../config/config'
 import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
 import Welcome from '../Welcome/Welcome';
 import Building from '../Building/Building';
+import Settings from '../Settings/Settings';
 
 function Navbar() {
     const parsedConfig = JSON.parse(JSON.stringify(config));
@@ -28,6 +29,14 @@ function Navbar() {
                             )
                         })
                     }
+                    <p>_________</p>
+                    <NavLink
+                        to="/settings"
+                        activeStyle={{ fontWeight: 'bold' }}
+                        style={{ color: 'inherit', textDecoration: 'inherit', fontWeight: 'normal'}}
+                    >
+                        <p>Paramètres</p>
+                    </NavLink>
                 </div>
             </div>
             <Switch>
@@ -42,6 +51,11 @@ function Navbar() {
                         )
                     })
                 }
+                <Route path="/settings">
+                    <div className="main-container">
+                        <Settings></Settings>
+                    </div>
+                </Route>
                 <Route path="/">
                     <div className="main-container">
                         <Welcome></Welcome>

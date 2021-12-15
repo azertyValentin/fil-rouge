@@ -9,9 +9,19 @@ function Room(props) {
         }
     }
 
+    const getNumberOfPeopleInRoom = () => {
+        var numberOfPeopleInRoom = 0
+        props.peoples.forEach(people => {
+            if (people.affected_room === props.room.id) {
+                numberOfPeopleInRoom ++
+            }
+        })
+        return numberOfPeopleInRoom;
+    }
+
     return (
         <div className="room-container">
-            <p><b>Salle {props.room.name}</b></p>
+            <p><b>Salle {props.room.name}</b> ({getNumberOfPeopleInRoom()}/{props.room.available_space})</p>
             {
                 props.peoples.filter(people => people.affected_room === props.room.id).map((people) => {
                     return (

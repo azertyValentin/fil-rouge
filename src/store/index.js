@@ -18,7 +18,7 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-    if (action.type === 'REMOVE_PERSON') {
+    if (action.type === 'REMOVE_PERSON_TO_ROOM') {
         return Object.assign({}, state, {
             peoples: state.peoples.map(people => {
                 if (people.id === action.payload.id) {
@@ -26,6 +26,27 @@ const reducer = (state = initialState, action) => {
                 }
                 return people;
             })
+        })
+    }
+    if (action.type === 'ADD_PERSON_TO_ROOM') {
+        return Object.assign({}, state, {
+            peoples: state.peoples.map(people => {
+                if (people.id === action.payload.person.id) {
+                    return new People(people.id, people.name, action.payload.selectedRoom)
+                }
+                return people;
+            })
+        })
+    }
+    if (action.type === 'ADD_PERSON') {
+        const newId = state.peoples[state.peoples.length-1].id+1
+        return Object.assign({}, state, {
+            peoples: [...state.peoples, new People(newId, action.payload, 0)]
+        })
+    }
+    if (action.type === 'REMOVE_PERSON') {
+        return Object.assign({}, state, {
+            peoples: state.peoples.filter(people => action.payload !== people.id)
         })
     }
     return state

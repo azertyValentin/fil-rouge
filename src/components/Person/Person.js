@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 function Person(props) {
     const deleteFromRoom = () => {
         props.dispatch({
-            type: 'REMOVE_PERSON',
+            type: 'REMOVE_PERSON_TO_ROOM',
             payload: props.people
         })
     }

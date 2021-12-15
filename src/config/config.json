@@ -15,7 +15,7 @@
                 {
                     "id": 2,
                     "name": "A2",
-                    "available_space": 1
+                    "available_space": 2
                 }
             ]
         },
@@ -26,12 +26,12 @@
                 {
                     "id": 3,
                     "name": "B1",
-                    "available_space": 1
+                    "available_space": 4
                 },
                 {
                     "id": 4,
                     "name": "B2",
-                    "available_space": 1
+                    "available_space": 2
                 }
             ]
         },
@@ -47,7 +47,7 @@
                 {
                     "id": 6,
                     "name": "C2",
-                    "available_space": 1
+                    "available_space": 2
                 }
             ]
         },
@@ -58,12 +58,12 @@
                 {
                     "id": 7,
                     "name": "D1",
-                    "available_space": 1
+                    "available_space": 3
                 },
                 {
                     "id": 8,
                     "name": "D2",
-                    "available_space": 1
+                    "available_space": 2
                 }
             ]
         }
@@ -72,7 +72,7 @@
         {
             "id": 1,
             "name": "Jean Dujardin",
-            "affected_room": 1
+            "affected_room": 3
         },
         {
             "id": 2,
@@ -98,6 +98,36 @@
             "id": 6,
             "name": "Christopher Nolan",
             "affected_room": 1
+        },
+        {
+            "id": 7,
+            "name": "Nelson Mandela",
+            "affected_room": 0
+        },
+        {
+            "id": 8,
+            "name": "Katy Perry",
+            "affected_room": 5
+        },
+        {
+            "id": 9,
+            "name": "Emma Stone",
+            "affected_room": 7
+        },
+        {
+            "id": 10,
+            "name": "Emmanuel Macron",
+            "affected_room": 8
+        },
+        {
+            "id": 11,
+            "name": "Kate Beckinsale",
+            "affected_room": 0
+        },
+        {
+            "id": 12,
+            "name": "Daniel Radcliffe",
+            "affected_room": 0
         }
     ]
 }
