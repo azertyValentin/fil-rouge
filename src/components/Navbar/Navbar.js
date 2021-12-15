@@ -37,6 +37,13 @@ function Navbar() {
                     >
                         <p>Paramètres</p>
                     </NavLink>
+                    <NavLink
+                        to="/"
+                        activeStyle={{ fontWeight: 'bold' }}
+                        style={{ color: 'inherit', textDecoration: 'inherit', fontWeight: 'normal'}}
+                    >
+                        <p>Acceuil</p>
+                    </NavLink>
                 </div>
             </div>
             <Switch>
